@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -29,7 +29,9 @@
         <a href="#" class="text-white text-base px-2">Beli Barang</a>
       </div>
       <div class="flex gap-4 items-center ml-auto">
-        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Register</button>
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
         <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
       </div>
     </div>
@@ -39,8 +41,8 @@
     <div class="flex justify-center items-center h-screen pt-12 w-[30%] mx-auto px-8">
       <form class="flex w-full flex-col gap-4 justify-center text-center py-10 px-8 rounded-lg shadow-md shadow-primary bg-neonGreen">
         <div class="flex flex-col gap-2">
-          <h1 class="font-bold text-5xl text-black">Daftar Dulu Yuk!</h1>
-          <p class="font-normal text-secondary">Mari bergabung dengan keluarga Nama Aplikasi! Bantu sesama bersama kita</p>
+          <h1 class="font-bold text-5xl text-black">Masuk Yuk!</h1>
+          <p class="font-normal text-secondary">Selamat datang kembali ke Nama Aplikasi!</p>
         </div>
         <div class="flex flex-col text-start gap-1">
           <label for="email" class="font-medium text-3xl text-black">Email</label>
@@ -52,12 +54,12 @@
             <input type="password" id="password" class="rounded-lg px-4 py-2 w-full" placeholder="*******" />
             <img src="./assets/img/Visibility.svg" alt="Visibility Icon" class="absolute right-2 bottom-1" />
           </div>
-          <div class="flex gap-2 items-center justify-start mt-1 pl-2">
-            <input type="checkbox" id="terms" class="w-4 h-4" />
-            <label for="terms" class="font-normal text-sm text-black">Saya Menyetujui <span class="underline font-medium">Syarat dan Ketentuan</span></label>
-          </div>
+          <p class="text-black underline font-normal text-base">Lupa kata sandi?</p>
         </div>
-        <button type="submit" class="w-[80%] bg-secondary rounded-xl text-2xl font-bold mt-2 text-white mx-auto py-2">Register</button>
+        <div class="flex flex-col gap-1">
+          <button type="submit" class="w-[80%] bg-secondary rounded-xl text-2xl font-bold mt-2 text-white mx-auto py-2">Login</button>
+          <p class="text-secondary">Belum punya akun? <span class="text-black underline">Yuk daftar dulu</span></p>
+        </div>
       </form>
     </div>
     <!-- Form Section End -->
