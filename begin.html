@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Begin.svg')] bg-cover bg-no-repeat min-h-screen" style="background-position-y: 75%">
+    <!-- Main Section Start -->
+    <div class="flex w-[80%] mx-auto justify-between px-12 pt-8">
+      <div class="w-[60%]">
+        <img src="./assets//img//Artboard.svg" alt="Artboard Logo" class="max-h-[85vh] w-full" />
+      </div>
+      <div class="w-[40%] flex flex-col gap-10 pt-16">
+        <img src="./assets//img/Logo.svg" alt="Logo" class="w-[80%]" />
+        <p class="font-normal text-lg text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, corporis amet. Corporis facere sapiente neque excepturi accusantium ipsum aperiam maiores incidunt adipisci harum fuga magnam quisquam tempora quo, facilis possimus?
+        </p>
+        <div class="flex flex-col gap-6">
+          <button class="text-black rounded-2xl bg-neonGreen py-4 font-bold text-3xl">LOGIN</button>
+          <button class="text-black rounded-2xl bg-neonGreen py-4 font-bold text-3xl">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
