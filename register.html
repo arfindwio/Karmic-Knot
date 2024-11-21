@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Auth.svg')] bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 fixed bg-secondary items-center">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Register</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Form Section Start -->
+    <div class="flex justify-center items-center h-screen pt-12 w-[30%] mx-auto">
+      <form class="flex flex-col gap-4 justify-center text-center py-10 px-8 rounded-lg shadow-md shadow-primary bg-neonGreen">
+        <div class="flex flex-col gap-2">
+          <h1 class="font-bold text-5xl text-black">Daftar Dulu Yuk!</h1>
+          <p class="font-normal text-secondary">Mari bergabung dengan keluarga Nama Aplikasi! Bantu sesama bersama kita</p>
+        </div>
+        <div class="flex flex-col text-start gap-1">
+          <label for="email" class="font-medium text-3xl text-black">Email</label>
+          <input type="email" id="email" placeholder="alexanderrama@gmail.com" class="rounded-lg px-4 py-2" />
+        </div>
+        <div class="flex flex-col text-start gap-1">
+          <label for="password" class="font-medium text-3xl text-black">Password</label>
+          <input type="password" id="password" class="rounded-lg px-4 py-2" placeholder="*******" />
+          <div class="flex gap-2 items-center justify-start mt-1 pl-2">
+            <input type="checkbox" id="terms" class="w-4 h-4" />
+            <label for="terms" class="font-normal text-sm text-black">Saya Menyetujui <span class="underline font-medium">Syarat dan Ketentuan</span></label>
+          </div>
+        </div>
+        <button type="submit" class="w-[80%] bg-secondary rounded-xl text-2xl font-bold mt-2 text-white mx-auto py-2">Register</button>
+      </form>
+    </div>
+    <!-- Form Section End -->
+  </body>
+</html>
