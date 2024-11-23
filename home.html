@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Banner Section Start -->
+    <div class="flex w-[90%] max-h-52 mt-24 bg-neonGreen rounded-3xl bg-opacity-[22%] mx-auto justify-between">
+      <div class="w-[70%] flex flex-col gap-1 py-8 px-10">
+        <h1 class="font-bold text-white text-3xl">Bingung banyak barang?</h1>
+        <h2 class="font-medium text-white text-3xl">Donasiin aja!!</h2>
+        <button class="w-fit rounded-2xl text-neonGreen mt-2 py-2 px-4 border-2 border-neonGreen font-medium">Donasi Sekarang</button>
+      </div>
+      <div class="flex w-[30%] pr-10">
+        <img src="./assets/img/Artboard-2.svg" alt="Artboard Logo" class="w-full object-cover object-top" />
+      </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Search Section Start -->
+    <div class="w-[90%] mt-8 mx-auto relative">
+      <input type="text" name="search" id="search" class="rounded-2xl w-full py-2 px-4 outline-none" placeholder="Cari Barang" autocomplete="off" />
+      <img src="./assets/img/Search-Icon.svg" alt="Search Icon" class="absolute right-3 bottom-[6px] scale-90" />
+    </div>
+
+    <!-- On Search Section Start -->
+    <!-- <div class="bg-black w-full h-full fixed top-0 bg-opacity-50 z-[2]"></div>
+
+    <div class="w-[90%] mt-8 mx-auto absolute left-1/2 transform -translate-x-1/2 bg-white rounded-2xl py-2 z-[2]">
+      <div class="relative px-4 py-1">
+        <input type="text" name="search" id="search" class="w-full outline-none bg-transparent pb-2" placeholder="Cari Barang" />
+        <img src="./assets/img/Search-Icon.svg" alt="Search Icon" class="absolute right-3 top-0 scale-90" />
+      </div>
+      <div class="border-t border-black flex items-center gap-3 px-4 hover:cursor-pointer">
+        <img src="./assets/img/History-Icon.svg" alt="History Icon" />
+        <p class="text-base text-opacity-50">Halo</p>
+        <img src="./assets/img/Cross-Icon.svg" alt="Cross Icon" class="ml-auto" />
+      </div>
+    </div> -->
+    <!-- On Search Section End -->
+
+    <!-- Search Section End -->
+
+    <!-- Product Section Start -->
+    <div id="product-list" class="w-[90%] mt-8 mb-16 mx-auto grid grid-cols-5 gap-6"></div>
+    <!-- Product Section End -->
+
+    <script>
+      const products = [
+        {
+          imagePath: "./assets/img/product/image5.png",
+          name: "Motor Beat 2014 Biru Putih 125cc",
+          price: "Rp5.000.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image1.png",
+          name: "Sofa Kulit 100% Warna Hitam Kuning",
+          price: "Rp50.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image2.png",
+          name: "Sepatu Adidas",
+          price: "Rp170.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image3.png",
+          name: "Baju H&M",
+          price: "Rp90.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image4.png",
+          name: "Monitor LG 24 inch Full HD - Garansi Original",
+          price: "Rp1.200.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image6.png",
+          name: "Tas Selempang Hitam",
+          price: "Rp50.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image2.png",
+          name: "Sepatu Adidas",
+          price: "Rp170.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image3.png",
+          name: "Baju H&M",
+          price: "Rp90.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image4.png",
+          name: "Monitor LG 24 inch Full HD - Garansi Original",
+          price: "Rp1.200.000",
+          city: "Bekasi",
+        },
+        {
+          imagePath: "./assets/img/product/image6.png",
+          name: "Tas Selempang Hitam",
+          price: "Rp50.000",
+          city: "Bekasi",
+        },
+      ];
+
+      const productListDiv = document.getElementById("product-list");
+
+      products.forEach((product) => {
+        const html = `
+        <div class="w-full flex flex-col min-h-[274px] bg-white rounded-lg overflow-hidden">
+            <img src="${product.imagePath}" alt="${product.name}" class="max-h-[175px] h-full object-cover" />
+            <div class="flex flex-col gap-1 w-full px-2 pt-1 pb-3">
+                <h5 class="font-medium text-black text-base leading-5">${product.name}</h5>
+                <h4 class="font-bold text-black text-base">${product.price}</h4>
+                <p class="font-normal text-black text-xs">${product.city}</p>
+                <div class="flex gap-1 mt-1 items-center justify-start">
+                    <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-125" />
+                    <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-125" />
+                    <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-125" />
+                    <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-125" />
+                    <img src="./assets/img/Half-Star.svg" alt="Half Star Icon" class="scale-125" />
+                    <p class="text-black text-[10px] font-medium">(234 reviews)</p>
+                </div>
+            </div>
+        </div>
+            `;
+        productListDiv.innerHTML += html; // Menambahkan HTML ke dalam div
+      });
+    </script>
+  </body>
+</html>
