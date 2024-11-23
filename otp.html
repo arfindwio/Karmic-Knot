@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Email Verifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 fixed bg-secondary items-center">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Register</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[65%] flex justify-center flex-col gap-4 items-center mx-auto pt-24">
+      <h1 class="text-neonGreen font-bold text-9xl text-center">Cek E-mail Kamu</h1>
+      <p class="text-center text-white text-xl">Tim kami telah mengirimkan link verifikasi ke email yang kamu daftarkan. Waktu verifikasi adalah 30 menit dan website akan otomatis refresh jika sudah melakukan verifikasi</p>
+      <img src="./assets/img/Saly-Logo.svg" alt="Saly Logo" class="w-[52%]" />
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
