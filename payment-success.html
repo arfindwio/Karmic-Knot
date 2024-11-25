@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="flex flex-col w-[70%] pt-24 mx-auto gap-8">
+      <h1 class="text-neonGreen font-bold text-8xl text-center">Pembayaran Berhasil</h1>
+      <p class="text-center text-white font-normal text-2xl leading-9">
+        Tim kami telah mengirimkan invoice lewat <span class="underline font-medium">e-mail</span> anda yang sudah terdaftar. Jika anda mengalami kendala pembayaran atau pengiriman barang, silahkan hubungi
+        <span class="underline font-medium">Pusat Bantuan</span>.
+      </p>
+      <img src="./assets/img/Payment-Success-Icon.svg" alt="Payment Success Icon" class="object-contain h-[52vh] text-center mx-auto" />
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
