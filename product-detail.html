@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Product Detail Section Start -->
+
+    <div class="flex w-[90%] pt-28 mx-auto">
+      <!-- Left Side Section Start -->
+      <div class="flex flex-col gap-4 w-[30%]">
+        <div class="relative mb-2">
+          <input type="text" name="search" id="search" class="rounded-2xl w-full py-2 pl-6 pr-10 outline-none" placeholder="Cari Barang" autocomplete="off" />
+          <img src="./assets/img/Search-Icon.svg" alt="Search Icon" class="absolute right-3 bottom-[6px] scale-90" />
+        </div>
+        <img src="./assets/img/product/image1.png" alt="Image1" class="object-contain w-full h-96 rounded-[10px] bg-white" />
+        <div class="grid grid-cols-4">
+          <img src="./assets/img/product/image1.png" alt="Image1" class="object-contain w-20 h-20 aspect-square bg-white rounded-[10px] border-[3px] border-neonGreen" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="object-contain w-20 h-20 aspect-square bg-white rounded-[10px]" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="object-contain w-20 h-20 aspect-square bg-white rounded-[10px]" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="object-contain w-20 h-20 aspect-square bg-white rounded-[10px]" />
+        </div>
+      </div>
+      <!-- Left Side Section End -->
+
+      <!-- Right Side Section Start -->
+      <div class="pl-8 flex flex-col gap-3 w-[70%]">
+        <div class="flex justify-between items-center">
+          <div class="flex flex-col gap-3">
+            <h15 class="font-[600] text-white text-4xl leading-[44px]">Sofa Kulit 100% Warna Hitam Kuning</h15>
+            <div class="flex gap-2 items-center">
+              <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-150" />
+              <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-150" />
+              <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-150" />
+              <img src="./assets/img/Star.svg" alt="Star Icon" class="scale-150" />
+              <img src="./assets/img/Half-Star.svg" alt="Half Star Icon" class="scale-150" />
+              <p class="text-white text-xs font-light opacity-75">4.7 (234 reviews)</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end w-fit">
+            <img src="./assets/img/Chat-Icon.svg" alt="Chat Icon" class="scale-75" />
+            <img src="./assets/img/Share-Icon.svg" alt="Share Icon" class="scale-75" />
+          </div>
+        </div>
+        <h4 class="font-bold text-white text-5xl mb-2">Rp50.000</h4>
+        <div class="flex flex-col">
+          <p class="text-white font-normal text-base">Kondisi : Bekas</p>
+          <p class="text-white font-normal text-base">Berat : 2 Kilogram</p>
+          <p class="text-white font-normal text-base">Posting : 27 April 2022</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 pb-6 border-b-2 border-slate-600">
+          <button class="bg-neonGreen rounded-[10px] text-white text-2xl py-2">Beli Sekarang</button>
+          <button class="bg-transparent border-[3px] text-neonGreen border-neonGreen rounded-[10px] text-2xl py-2">+ Keranjang</button>
+        </div>
+        <h5 class="font-[600px] text-white text-3xl">Deskripsi Barang</h5>
+        <p class="text-white text-base text-opacity-90">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio eum sunt quaerat ab? Aperiam delectus architecto possimus dolor impedit nostrum incidunt illum nulla ad! Voluptates qui nam ab doloremque?Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Soluta iusto sunt ipsum itaque velit ullam maiores repellendus est quas. Ducimus quaerat minima ratione molestias quis numquam deserunt vel qui porro!
+        </p>
+      </div>
+      <!-- Right Side Section End -->
+    </div>
+    <!-- Product Detail Section End -->
+  </body>
+</html>
