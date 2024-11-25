@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              tertiary: "#004575",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Cart.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
+        <img src="./assets//img/Photo-User.svg" alt="User Account" class="w-10 h-10" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="flex w-[90%] pt-24 mx-auto">
+      <!-- Cart Section Start -->
+      <div class="flex w-[75%] flex-col gap-2 pr-8">
+        <h1 class="font-bold text-4xl text-white">Keranjang Barang</h1>
+        <form class="flex flex-col">
+          <div class="flex gap-3 ml-4 items-center justify-start">
+            <input type="checkbox" name="toko1" id="toko1" class="h-5 w-5" />
+            <label for="toko1" class="font-medium text-3xl text-white">Toko 1</label>
+          </div>
+          <div class="flex flex-col gap-4 bg-tertiary w-full rounded-3xl border border-black p-6">
+            <div class="flex">
+              <div class="flex gap-2 w-[75%] items-center">
+                <input type="checkbox" class="h-5 w-5" />
+                <img src="./assets/img/product/image7.png" alt="image cart" class="object-cover max-h-20 max-w-20" />
+                <div class="flex flex-col justify-center w-full">
+                  <h4 class="leading-8 text-white font-medium text-xl">Lorem ipsum dolor sit amet</h4>
+                  <h5 class="leading-6 text-white font-bold text-lg text-start">Rp 40.000</h5>
+                </div>
+              </div>
+              <div class="flex items-end w-[25%]">
+                <div class="border-r-2 pr-3">
+                  <img src="./assets/img/Trash-Icon.svg" alt="Trash Icon" />
+                </div>
+                <div class="ml-auto flex flex-col justify-center text-center gap-2 w-[60%]">
+                  <p class="text-white text-base">Stok : 21</p>
+                  <div class="flex items-center gap-1 h-fit">
+                    <div class="relative h-7 w-14 text-center bg-neonGreen rounded-full text-white">
+                      <p class="absolute top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-2xl">-</p>
+                    </div>
+                    <input type="number" min="1" value="1" class="outline-none border-2 border-neonGreen w-full h-fit text-center rounded-[10px] py-1 text-sm" />
+                    <div class="relative h-7 w-14 text-center bg-neonGreen rounded-full text-white">
+                      <p class="absolute top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-xl">+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Cart Section End -->
+
+      <!-- Checkout Section Start -->
+      <div class="flex flex-col gap-2 w-[25%] bg-white rounded-[10px] p-4 h-fit">
+        <h4 class="text-black font-bold text-xl">Checkout</h4>
+        <div class="flex flex-col pb-2 border-b-2">
+          <div class="gap-3 flex">
+            <p class="text-black text-base">3x</p>
+            <p class="text-black text-base">barang 1</p>
+            <p class="text-black text-base ml-auto">Rp. 75000</p>
+          </div>
+          <div class="gap-3 flex">
+            <p class="text-black text-base">3x</p>
+            <p class="text-black text-base">barang 2</p>
+            <p class="text-black text-base ml-auto">Rp. 75000</p>
+          </div>
+          <div class="gap-3 flex">
+            <p class="text-black text-base">3x</p>
+            <p class="text-black text-base">barang 3</p>
+            <p class="text-black text-base ml-auto">Rp. 80000</p>
+          </div>
+        </div>
+        <div class="flex">
+          <h5 class="font-bold text-black text-lg">Total Harga</h5>
+          <p class="text-black font-medium text-[18px] ml-auto">Rp. 230.000</p>
+        </div>
+        <button class="bg-neonGreen w-full border shadow-sm text-white py-2 rounded-[10px] hover:bg-opacity-80">Bayar</button>
+      </div>
+      <!-- Checkout Section End -->
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
