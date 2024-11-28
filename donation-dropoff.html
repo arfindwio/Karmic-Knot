@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Drop Off</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Donation.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[90%] flex flex-col gap-6 mx-auto pt-24">
+      <h1 class="text-white font-bold text-4xl">Donasi Barang</h1>
+      <h5 class="text-white font-[600] text-3xl pb-6 w-1/3 border-b border-neonGreen">Terima Kasih Telah Berdonasi!</h5>
+      <p class="text-white font-medium text-xl">Terima kasih telah percaya kepada layanan kami dan untuk melanjutkan donasi kamu. Kamu dapat melakukan drop-off barang yang ingin kamu donasikan ke lokasi dibawah ini</p>
+      <div class="grid grid-cols-6 gap-10">
+        <img src="./assets/img/Map-Photo.svg" alt="Map Photo" class="col-span-2 object-cover rounded-xl w-full aspect-square max-h-[480px]" />
+        <div class="flex flex-col gap-8 pt-6 col-span-3">
+          <div class="flex flex-col gap-4">
+            <h5 class="text-neonGreen font-[600] text-3xl">Alamat Lengkap</h5>
+            <p class="text-white font-normal text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero explicabo dolorum incidunt unde adipisci et, similique nostrum ea exercitationem. Sunt, hic quis dolore aut nisi suscipit quas voluptates reprehenderit. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore ipsam corporis sit at voluptas harum, aut, saepe ex nemo magnam repudiandae enim error. Totam nisi earum dolores molestias error.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h5 class="text-neonGreen font-[600] text-3xl">Kontak Karyawan</h5>
+            <div class="flex flex-col">
+              <p class="text-white font-normal text-lg">021-234-5667</p>
+              <p class="text-white font-normal text-lg">089568902845</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-white text-lg font-normal">Jika kamu mengalami kendala, silahkan hubungi Pusat Bantuan</p>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
