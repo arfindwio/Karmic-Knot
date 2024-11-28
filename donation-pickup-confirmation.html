@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Pick Up Confirmation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Donation.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Administrasi</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[90%] flex flex-col gap-6 mx-auto pt-24">
+      <h1 class="text-white font-bold text-4xl">Donasi Barang Besar</h1>
+      <div class="flex w-[75%] justify-between items-center">
+        <h5 class="text-white font-[600] text-3xl">Konfirmasi Pertemuan</h5>
+        <div class="flex items-center">
+          <p class="text-white font-normal text-lg">Urut Berdasarkan</p>
+          <img src="./assets/img/CaretRight-Logo.svg" alt="Caret Right Logo" />
+        </div>
+      </div>
+      <div class="flex w-[75%] border-2 border-neonGreen bg-secondary rounded-[10px]">
+        <div class="flex flex-col w-[75%] gap-2 border-r-2 border-neonGreen px-6 py-3">
+          <div class="flex justify-between items-start">
+            <h5 class="text-white font-[600] text-xl">Alexander Rama Giofran</h5>
+            <p class="text-white font-normal text-base">Post : 24 Mei 2022</p>
+          </div>
+          <div class="flex justify-between items-start">
+            <h5 class="text-white font-normal text-lg">Senin, 25 Mei 2022</h5>
+            <p class="text-white font-normal text-lg">10.00 WIB</p>
+          </div>
+        </div>
+        <div class="flex w-[25%] justify-evenly border-r-2 border-neonGreen px-6 py-3">
+          <img src="./assets/img/Checklist-Icon.svg" alt="Checklist Icon" />
+          <img src="./assets/img/Cross-Icon(2).svg" alt="Cross Icon" />
+          <img src="./assets/img/CaretDown-Icon.svg" alt="Caret Down Icon" class="scale-[60%] ml-8" />
+        </div>
+      </div>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
