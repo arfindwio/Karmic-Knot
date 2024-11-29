@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary bg-cover bg-center bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Login</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="grid grid-cols-2 w-[90%] pt-24 pb-16 mx-auto gap-10">
+      <h1 class="col-span-2 text-white font-semibold text-5xl">Checkout</h1>
+      <!-- Left Side Section Start -->
+      <form class="flex flex-col gap-6">
+        <h5 class="pb-4 border-b border-neonGreen text-white font-semibold text-3xl">Alamat Pengiriman</h5>
+        <div class="flex flex-col">
+          <label for="recipient" class="text-white font-medium text-lg">Nama Penerima</label>
+          <input type="text" name="recipient" id="recipient" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Nama Penerima" />
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="flex flex-col col-span-2">
+            <label for="phoneNumber" class="text-white font-medium text-lg">Nomor Telepon</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Nomor" />
+          </div>
+          <div class="flex flex-col col-span-1">
+            <label for="postalCode" class="text-white font-medium text-lg">Kode Pos</label>
+            <input type="number" name="postalCode" id="postalCode" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Kode" />
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <label for="city" class="text-white font-medium text-lg">Kota atau Kecamatan</label>
+          <input type="text" name="city" id="city" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Kota atau Kecamatan" />
+        </div>
+        <div class="flex flex-col">
+          <label for="address" class="text-white font-medium text-lg">Alamat</label>
+          <input type="text" name="address" id="address" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Alamat Lengkap" />
+        </div>
+        <div class="flex flex-col">
+          <label class="text-white font-medium text-lg">Lokasi Map (Opsional)</label>
+          <div type="text" name="address" id="address" class="flex justify-between items-center px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary">
+            <img src="./assets/img/Location-Icon.svg" alt="Location Icon" class="w-fit" />
+            <p class="text-white text-base font-normal px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quos fugit facilis eius. Autem assumenda vitae porro error, neque reiciendis cumque voluptas.</p>
+            <button class="text-black bg-white border border-neonGreen px-6 py-2 rounded-[10px] text-lg font-bold">Ubah</button>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="text-white text-2xl font-semibold">Pilih Kurir</h4>
+          <div class="flex bg-secondary rounded-[10px]">
+            <div class="flex flex-col w-1/3 gap-1 px-[2px] py-4">
+              <h5 class="text-white font-medium text-xl text-center pb-2">Reguler</h5>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">JNE Reguler</h5>
+                  <p class="text-white font-normal text-sm">Rp9.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-30 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">J&T Reguler</h5>
+                  <p class="text-white font-normal text-sm">Rp9.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-31 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">Pos Indonesia</h5>
+                  <p class="text-white font-normal text-sm">Rp8.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-31 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">TIKI Reguler</h5>
+                  <p class="text-white font-normal text-sm">Rp10.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-31 Mei</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col w-1/3 gap-1 px-[2px] py-4 border-x-2 border-neonGreen">
+              <h5 class="text-white font-medium text-xl text-center pb-2">Express</h5>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">JNE YES</h5>
+                  <p class="text-white font-normal text-sm">Rp18.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-30 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">J&T Reguler</h5>
+                  <p class="text-white font-normal text-sm">Rp12.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-30 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">TIKI Two Day Service</h5>
+                  <p class="text-white font-normal text-sm">Rp15.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28-30 Mei</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col w-1/3 gap-1 px-[2px] py-4">
+              <h5 class="text-white font-medium text-xl text-center pb-2">Same Day</h5>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">GRAB</h5>
+                  <p class="text-white font-normal text-sm">Rp9.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28 Mei</p>
+                </div>
+              </div>
+              <div class="flex gap-2 px-4 pt-4 pb-[2px] bg-primary rounded-[10px]">
+                <input type="checkbox" class="w-6 h-6 mt-3" />
+                <div class="flex w-full flex-col gap-0">
+                  <h5 class="text-white font-medium text-base">Go-Send</h5>
+                  <p class="text-white font-normal text-sm">Rp9.000</p>
+                  <p class="ml-auto text-white text-[8px] opacity-75">Estimasi 28 Mei</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- Left Side Section End -->
+
+      <!-- Right Side Section Start -->
+      <div class="flex flex-col gap-6">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="./assets/img/product/image1.png" alt="image1" class="bg-white rounded-[10px] object-contain max-h-[280px] w-full" />
+          <div class="flex flex-col">
+            <h5 class="text-white font-semibold text-2xl">Sofa Kulit 100% Warna Hitam Kuning</h5>
+            <div class="mt-auto flex flex-col">
+              <p class="text-white font-normal text-lg">Kondisi : Bekas</p>
+              <p class="text-white font-normal text-lg">Berat : 2 Kilogram</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col py-3 border-y-2 border-neonGreen">
+          <h5 class="text-white font-semibold text-3xl mb-4">Ringkasan Pembayaran</h5>
+          <div class="flex-col flex gap-2">
+            <div class="flex justify-between">
+              <p class="text-white font-normal text-base text-opacity-85">Harga Barang</p>
+              <p class="text-white font-normal text-base">Rp50.000</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-white font-normal text-base text-opacity-85">Harga Layanan</p>
+              <p class="text-white font-normal text-base">Rp1.000</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-white font-normal text-base text-opacity-85">Harga Ongkos Kirim</p>
+              <p class="text-white font-normal text-base">Rp9.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-white font-semibold text-xl">Total Harga</p>
+          <p class="text-white font-semibold text-xl">Rp60.000</p>
+        </div>
+        <div class="px-4 py-3 w-full border-2 border-neonGreen rounded-[10px] flex items-center justify-between">
+          <button class="w-1/4 max-w-[185px] px-4 flex justify-between items-center bg-white rounded-[10px]">
+            <img src="./assets/img/Gopay-Logo.png" alt="Gopay Logo" class="w-24" />
+            <img src="./assets/img/CaretDown-Icon.svg" alt="Caret Down Icon" class="grayscale" />
+          </button>
+          <p class="text-white font-semibold text-xl">Pilih Pembayaran</p>
+        </div>
+
+        <button class="w-full py-3 bg-neonGreen rounded-[10px] text-3xl font-semibold text-white">Bayar</button>
+      </div>
+      <!-- Right Side Section End -->
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
