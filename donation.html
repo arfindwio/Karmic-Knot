@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Donation.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Cari Barang</a>
+        <a href="#" class="text-white text-base px-2">Beli Barang</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <img src="./assets/img/Shopping-cart.svg" alt="Shopping Cart Icon" class="scale-[85%]" />
+        <div class="text-white text-4xl pb-2">|</div>
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="flex flex-col w-[90%] pt-24 pb-16 mx-auto gap-10">
+      <h1 class="text-white font-semibold text-5xl w-[75%]">Donasi Barang</h1>
+      <form class="flex flex-col w-[75%] gap-6">
+        <h5 class="pb-4 border-b border-neonGreen text-white font-semibold text-3xl w-[75%]">Alamat Donatur</h5>
+        <div class="flex flex-col">
+          <label for="name" class="text-white font-medium text-lg">Nama Donatur</label>
+          <input type="text" name="name" id="name" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Nama Donatur" />
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="flex flex-col col-span-2">
+            <label for="email" class="text-white font-medium text-lg">Email</label>
+            <input type="email" name="email" id="email" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Alamat E-Mail" />
+          </div>
+          <div class="flex flex-col col-span-1">
+            <label for="phoneNumber" class="text-white font-medium text-lg">Telepon</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Telepon" />
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="flex flex-col col-span-2">
+            <label for="city" class="text-white font-medium text-lg">Kota atau Kecamatan</label>
+            <input type="text" name="city" id="city" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Kota atau Kecamatan" />
+          </div>
+          <div class="flex flex-col col-span-1">
+            <label for="postalCode" class="text-white font-medium text-lg">Kode Pos</label>
+            <input type="number" name="postalCode" id="postalCode" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Kode" />
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <label for="address" class="text-white font-medium text-lg">Alamat Lengkap</label>
+          <input type="text" name="address" id="address" class="px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary placeholder-white text-white outline-none" placeholder="Alamat Lengkap" />
+        </div>
+        <div class="flex flex-col w-[75%]">
+          <label class="text-white font-medium text-lg">Lokasi Map</label>
+          <div type="text" name="address" id="address" class="flex justify-between items-center px-6 py-3 border-2 border-neonGreen rounded-[10px] bg-secondary">
+            <img src="./assets/img/Location-Icon.svg" alt="Location Icon" class="w-fit" />
+            <p class="text-white text-base font-normal px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quos fugit facilis eius. Autem assumenda vitae porro error, neque reiciendis cumque voluptas.</p>
+            <button class="text-black bg-white border border-neonGreen px-6 py-2 rounded-[10px] text-lg font-bold">Ubah</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-10">
+          <button class="bg-neonGreen py-4 rounded-[10px] text-white text-3xl font-semibold">Drop-Off Donasi</button>
+          <button class="bg-transparent py-4 rounded-[10px] text-neonGreen text-3xl font-semibold border-2 border-neonGreen">Donasi Besar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
