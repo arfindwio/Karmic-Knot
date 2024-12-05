@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Donation.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Administrasi</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[90%] flex flex-col gap-6 mx-auto pt-24">
+      <h1 class="text-white font-bold text-4xl">Administrasi Barang</h1>
+
+      <div class="flex w-[74%] justify-between items-center">
+        <button class="py-2 text-black px-4 font-semibold text-2xl rounded-[10px] bg-neonGreen">+ Tambah Barang</button>
+        <div class="relative">
+          <input type="text" name="search" id="search" class="rounded-full bg-white border-2 border-neonGreen outline-none placeholder:text-black pl-4 pr-10 py-2" placeholder="Cari Barang" />
+          <img src="./assets/img/Search-Icon.svg" alt="Search Icon" class="absolute right-2 top-2" />
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-10">
+        <div class="flex flex-col col-span-3">
+          <div class="flex items-center border-2 border-neonGreen bg-secondary rounded-[10px] h-fit">
+            <div class="pl-6 pr-3 py-3">
+              <img src="./assets/img/product/image1.png" alt="Item Photo" class="aspect-square object-contain rounded-[10px] h-full bg-white max-w-[60px]" />
+            </div>
+            <div class="flex flex-col w-[70%] gap-2 border-r-2 border-neonGreen py-3 pr-6">
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-semibold text-xl">Sofa Kulit 100% Warna Hitam...</h5>
+                <p class="text-white font-normal text-base">Post : 24 Mei 2022</p>
+              </div>
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-normal text-lg">Alexander Rama Giofran</h5>
+                <p class="text-white font-normal text-lg">Rp 50.000</p>
+              </div>
+            </div>
+            <div class="flex w-[25%] justify-evenly border-neonGreen px-6 py-3">
+              <img src="./assets/img/Trash-Icon.svg" alt="Trash Icon" class="scale-125" />
+              <img src="./assets/img/Edit-Icon.svg" alt="Edit Icon" />
+              <img src="./assets/img/CaretRight-Icon.svg" alt="Caret Right Icon" class="ml-8" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border-2 rounded-[10px] border-neonGreen bg-secondary h-fit">
+          <h5 class="py-2 px-6 border-b-2 border-neonGreen text-white font-semibold text-3xl">Data</h5>
+          <div class="flex gap-2 py-2 px-6 items-center border-b-2 border-neonGreen bg-primary">
+            <input type="checkbox" name="filter" id="filter" class="w-6 h-6" />
+            <p class="text-neonGreen font-medium text-3xl">Barang</p>
+          </div>
+          <div class="flex gap-2 py-2 px-6 items-center border-b-2 border-neonGreen">
+            <input type="checkbox" name="filter" id="filter" class="w-6 h-6" />
+            <p class="text-white font-medium text-3xl">Karyawan</p>
+          </div>
+          <div class="flex gap-2 py-2 px-6 items-center">
+            <input type="checkbox" name="filter" id="filter" class="w-6 h-6" />
+            <p class="text-white font-medium text-3xl">Pesanan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
