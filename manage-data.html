@@ -40,13 +40,21 @@
 
       <div class="flex w-[74%] justify-between items-center">
         <button class="py-2 text-black px-4 font-semibold text-2xl rounded-[10px] bg-neonGreen">+ Tambah Barang</button>
+
+        <!-- untuk Karyawan -->
+        <!-- <button class="py-2 text-black px-4 font-semibold text-2xl rounded-[10px] bg-neonGreen">+ Tambah Akun</button> -->
+
+        <!-- untuk Pesanan -->
+        <!-- <h5 class="text-white font-semibold text-2xl">Konfirmasi Pesanan Costumer</h5> -->
+
         <div class="relative">
           <input type="text" name="search" id="search" class="rounded-full bg-white border-2 border-neonGreen outline-none placeholder:text-black pl-4 pr-10 py-2" placeholder="Cari Barang" />
           <img src="./assets/img/Search-Icon.svg" alt="Search Icon" class="absolute right-2 top-2" />
         </div>
       </div>
       <div class="grid grid-cols-4 gap-10">
-        <div class="flex flex-col col-span-3">
+        <div class="flex flex-col gap-4 col-span-3">
+          <!-- Data Barang -->
           <div class="flex items-center border-2 border-neonGreen bg-secondary rounded-[10px] h-fit">
             <div class="pl-6 pr-3 py-3">
               <img src="./assets/img/product/image1.png" alt="Item Photo" class="aspect-square object-contain rounded-[10px] h-full bg-white max-w-[60px]" />
@@ -54,7 +62,7 @@
             <div class="flex flex-col w-[70%] gap-2 border-r-2 border-neonGreen py-3 pr-6">
               <div class="flex justify-between items-start">
                 <h5 class="text-white font-semibold text-xl">Sofa Kulit 100% Warna Hitam...</h5>
-                <p class="text-white font-normal text-base">Post : 24 Mei 2022</p>
+                <p class="text-white font-normal text-base italic">Post : 24 Mei 2022</p>
               </div>
               <div class="flex justify-between items-start">
                 <h5 class="text-white font-normal text-lg">Alexander Rama Giofran</h5>
@@ -66,6 +74,44 @@
               <img src="./assets/img/Edit-Icon.svg" alt="Edit Icon" />
               <img src="./assets/img/CaretRight-Icon.svg" alt="Caret Right Icon" class="ml-8" />
             </div>
+          </div>
+
+          <!-- Data Karyawan -->
+          <div class="flex items-center border-2 border-neonGreen bg-secondary rounded-[10px] h-fit">
+            <div class="pl-6 pr-3 py-3">
+              <img src="./assets/img/Photo-Admin.png" alt="Item Photo" class="aspect-square object-contain rounded-[10px] h-full bg-white max-w-[60px]" />
+            </div>
+            <div class="flex flex-col w-[70%] gap-2 border-r-2 border-neonGreen py-3 pr-6">
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-semibold text-xl">Alexander Rama Giofran</h5>
+                <p class="text-white font-normal text-base italic">Last Access : 2024-10-03 at 23:02:01</p>
+              </div>
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-normal text-lg">Karyawan Marketing</h5>
+                <p class="text-neonGreen font-medium text-lg underline">Login Aktif</p>
+              </div>
+            </div>
+            <div class="flex w-[25%] justify-evenly border-neonGreen px-6 py-3">
+              <img src="./assets/img/Trash-Icon.svg" alt="Trash Icon" class="scale-125" />
+              <img src="./assets/img/Edit-Icon.svg" alt="Edit Icon" />
+              <img src="./assets/img/CaretRight-Icon.svg" alt="Caret Right Icon" class="ml-8" />
+            </div>
+          </div>
+
+          <!-- Data Pesanan -->
+          <div class="flex items-center border-2 border-neonGreen bg-secondary rounded-[10px] h-fit px-6 py-3 gap-2">
+            <img src="./assets/img/History-Icon.svg" alt="Item Photo" class="aspect-square object-contain h-full bg-[#D5B45F] rounded-full p-1" />
+            <div class="flex flex-col w-[80%] gap-1">
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-semibold text-xl">Motor Beat 2014 Biru Putih 125cc</h5>
+                <p class="text-white font-normal text-base italic">21 Maret 2022 - 10.17 WIB</p>
+              </div>
+              <div class="flex justify-between items-start">
+                <h5 class="text-white font-normal text-lg">Alexander Rama Giofran</h5>
+                <p class="text-white font-semibold text-xl">Rp 5.000.000</p>
+              </div>
+            </div>
+            <img src="./assets/img/CaretRight-Icon.svg" alt="Caret Right Icon" class="ml-auto" />
           </div>
         </div>
         <div class="flex flex-col border-2 rounded-[10px] border-neonGreen bg-secondary h-fit">
