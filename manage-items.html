@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #date::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Manage-Items.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Administrasi</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[90%] mx-auto py-24">
+      <form class="flex flex-col gap-6">
+        <div class="flex justify-between items-center">
+          <h1 class="text-white font-semibold text-4xl">Sofa Kulit 100% Warna Hitam Kuning</h1>
+          <p class="text-neonGreen font-semibold text-lg flex gap-2 underline">Save Data <img src="./assets/img/Edit-Icon(2).svg" alt="Edit Icon" /></p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/img/product/image1.png" alt="Image1" class="bg-white object-contain rounded-[10px] aspect-square max-h-32" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="bg-white object-contain rounded-[10px] aspect-square max-h-32" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="bg-white object-contain rounded-[10px] aspect-square max-h-32" />
+          <img src="./assets/img/product/image1.png" alt="Image1" class="bg-white object-contain rounded-[10px] aspect-square max-h-32" />
+          <button class="border-2 border-dashed border-neonGreen rounded-md p-4 flex items-center justify-center flex-col gap-2 aspect-square max-h-32">
+            <img src="./assets/img/Camera-Icon.svg" alt="Camera Icon" />
+            <p class="text-white font-semibold text-sm">Add Other Photo</p>
+          </button>
+        </div>
+        <div class="flex justify-between">
+          <div class="w-[32%] flex flex-col gap-2">
+            <label for="condition" class="text-white text-lg font-medium">Kondisi</label>
+            <input type="text" name="condition" id="condition" placeholder="Bekas" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none" />
+          </div>
+          <div class="w-[32%] flex flex-col gap-2">
+            <label for="weight" class="text-white text-lg font-medium">Berat</label>
+            <input type="text" name="weight" id="weight" placeholder="2 Kilogram" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none" />
+          </div>
+          <div class="w-[32%] flex flex-col gap-2">
+            <label for="date" class="text-white text-lg font-medium">Berat</label>
+            <input type="date" name="date" id="date" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-white text-base bg-black bg-opacity-15" value="2024-12-09" />
+          </div>
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <label for="price" class="text-white text-lg font-medium">Harga</label>
+          <input type="number" name="price" id="price" placeholder="100000" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none" />
+        </div>
+        <div class="flex justify-between">
+          <div class="w-[48%] flex flex-col gap-2">
+            <label for="ownerName" class="text-white text-lg font-medium">Nama Pemilik</label>
+            <input type="text" name="ownerName" id="ownerName" placeholder="Nama Pemilik" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none" />
+          </div>
+          <div class="w-[48%] flex flex-col gap-2">
+            <label for="phoneNumber" class="text-white text-lg font-medium">Nomor Telepn</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="08123456789"
+              pattern="[0-9]{12}"
+              class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none"
+            />
+          </div>
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <label for="address" class="text-white text-lg font-medium">Alamat</label>
+          <input type="text" name="address" id="address" placeholder="Alamat Lengkap" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none" />
+        </div>
+        <div class="w-[80%] flex flex-col gap-2">
+          <label for="description" class="text-white text-lg font-medium">Deskripsi Barang</label>
+          <textarea
+            name="description"
+            id="description"
+            rows="5"
+            cols="40"
+            placeholder="Deskripsi Barang"
+            class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-black bg-opacity-15 text-white outline-none"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
