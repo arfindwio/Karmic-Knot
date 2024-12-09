@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #date::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002248",
+              secondary: "#003153",
+              neonGreen: "#5FD58B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[url('./assets/img/Background-Admin-Profile.svg')] bg-cover bg-bottom bg-no-repeat min-h-screen">
+    <!-- Navbar Section Start -->
+    <div class="flex w-full px-8 py-2 top-0 fixed bg-secondary items-center z-10">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/img/Logo.svg" alt="Logo" class="w-40 h-14" />
+        <a href="#" class="text-white text-base px-2">Donasi</a>
+        <a href="#" class="text-white text-base px-2">Administrasi</a>
+      </div>
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="rounded-full px-6 py-1 text-black text-base font-medium bg-neonGreen">Logout</button>
+        <img src="./assets//img/Photo-User.png" alt="User Account" class="w-10 h-10 bg-white rounded-full" />
+      </div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start -->
+    <div class="w-[60%] mx-auto pt-32 pb-24">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-6">
+          <img src="./assets/img/Photo-Admin.png" alt="Photo Admin" class="rounded-full object-top object-cover aspect-square w-48 h-48" />
+          <div class="flex flex-col gap-4">
+            <div class="flex-col">
+              <h5 class="text-white font-bold text-5xl tracking-wide">Alexander Rama Giofran</h5>
+              <h5 class="text-neonGreen font-bold text-5xl tracking-wide">Karyawan IT</h5>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-white font-medium text-2xl tracking-wider">Jadwal Kerja</p>
+              <p class="text-white font-light text-2xl tracking-wider">Senin - Jumat : 09.00 - 17.00 WIB</p>
+            </div>
+          </div>
+        </div>
+        <button class="flex gap-2 text-neonGreen font-semibold text-lg underline ml-auto">
+          Edit Data
+          <img src="./assets/img/Edit-Icon(2).svg" alt="Edit Icon" />
+        </button>
+        <form class="flex flex-col gap-6">
+          <div class="w-full flex flex-col gap-2">
+            <label for="recipientname" class="text-white text-lg font-medium">Alexander Rama Giofran</label>
+            <input type="text" name="recipientname" id="recipientname" placeholder="Alamat Lengkap" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+          </div>
+          <div class="flex justify-between">
+            <div class="w-[48%] flex flex-col gap-2">
+              <label for="phoneNumber" class="text-white text-lg font-medium">Nomor Telepon</label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="08123456789"
+                pattern="[0-9]{12}"
+                class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none"
+              />
+            </div>
+            <div class="w-[48%] flex flex-col gap-2">
+              <label for="email" class="text-white text-lg font-medium">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="alexrama@student.ub.ac.id" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="w-[32%] flex flex-col gap-2">
+              <label for="relegion" class="text-white text-lg font-medium">Agama</label>
+              <input type="text" name="relegion" id="relegion" placeholder="Islam" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+            <div class="w-[32%] flex flex-col gap-2">
+              <label for="gender" class="text-white text-lg font-medium">Kelamin</label>
+              <input type="text" name="gender" id="gender" placeholder="Laki-laki" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+            <div class="w-[32%] flex flex-col gap-2">
+              <label for="status" class="text-white text-lg font-medium">Status</label>
+              <input type="text" name="status" id="status" placeholder="Tidak Menikah" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="w-[48%] flex flex-col gap-2">
+              <label for="dateEntry" class="text-white text-lg font-medium">Tanggal Masuk</label>
+              <input type="date" name="dateEntry" id="dateEntry" value="2017-01-21" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+            <div class="w-[48%] flex flex-col gap-2">
+              <label for="devision" class="text-white text-lg font-medium">Devisi</label>
+              <input type="text" name="devision" id="devision" placeholder="Divisi Karyawan IT (Teknologi)" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-2">
+            <label for="address" class="text-white text-lg font-medium">Alamat</label>
+            <input type="text" name="address" id="address" placeholder="Jalan Raya Sumbersari No.11" class="px-6 py-3 rounded-[10px] border-2 border-neonGreen placeholder:text-white text-base bg-secondary text-white outline-none" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Main Section End -->
+  </body>
+</html>
